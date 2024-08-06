@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Modal</title>
+      <meta content="" name="description">
+      <meta content="" name="keywords">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta content="telephone=no" name="format-detection">
+      <meta name="HandheldFriendly" content="true">
+      <!--link(href='https://fonts.googleapis.com/css?family=Cormorant:300,400,500,600|Noto+Sans:400,400i,700&display=swap&subset=cyrillic', rel='stylesheet')-->
+      <link href="static/css/main.css?1" rel="stylesheet">
+      <link rel="shortcut icon" href="fav.svg" type="image/svg">
+      <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+  </head>
+  <body class="page">
+    <div class="page__wrapper">
+      <div class="page__page-header">
+              <div class="page-header">
+                        <div class="page-header__top">
+                          <div class="container">
+                                    <div class="page-header__top-menu"><a class="page-header__top-menu-link" href="/">Доставка и оплата</a><a class="page-header__top-menu-link" href="/">Гарантия и возврат</a><a class="page-header__top-menu-link" href="/">EN</a>
+                                    </div>
+                          </div>
+                        </div>
+                        <div class="page-header__top-two">
+                          <div class="container">
+                                    <div class="page-header__top-style row">
+                                      <div class="col-6 col-sm-3 col-lg-3"><a class="page-header__logo" href="/"><img src="static/img/general/logo.svg"/></a>
+                                      </div>
+                                              <div class="page-header__col-menu col-7 col-lg-6">
+                                                        <div class="page-header__menu"><a class="page-header__menu-link" href="/">КАТАЛОГ</a><a class="page-header__menu-link" href="/">О КОМПАНИИ</a><a class="page-header__menu-link" href="/">КОНТАКТЫ</a>
+                                                        </div>
+                                              </div>
+                                              <div class="page-header__col-menu col-3 col-lg-3">
+                                                        <form class="page-header__search-form">
+                                                                  <div class="page-header__search"><input class="page-header__search-input" type="text" placeholder="Лампы"/>
+                                                                            <button class="page-header__search-icon">
+            <svg class="icon__search" width="20px" height="21px">
+                <use xlink:href="svg-symbols.svg#search"></use>
+            </svg>
+        
+                                                                            </button>
+                                                                  </div>
+                                                                  <div class="page-header__cart-form">
+                                                                            <div class="page-header__cart-icon">
+            <svg class="icon__cart" width="21px" height="27px">
+                <use xlink:href="svg-symbols.svg#cart"></use>
+            </svg>
+        
+                                                                                      <div class="page-header__number-cart">3
+                                                                                      </div>
+                                                                            </div>
+                                                                            <button class="page-header__search-cart" type="submit">Корзина
+                                                                            </button>
+                                                                  </div>
+                                                        </form>
+                                              </div>
+                                              <div class="page-header__col-burger col-6">
+                                                        <div class="page-header__burger-mobile">
+                                                          <div class="gamburger js-menu"><span class="gamburger-line1"></span><span class="gamburger-line2"></span><span class="gamburger-line3"></span></div>
+                                                        </div>
+                                              </div>
+                                    </div>
+                          </div>
+                        </div>
+              </div>
+      </div>
+      <div class="container user-content">
+        <p style="padding-top: 30px"><a href="#callme" data-toggle="modal">Форма</a></p>
+        <p>
+          Вывод окна спасибо:<br>    window.drowRes('Спасибо', 'Мы свяжемся с вами в ближайшее время', $('.b-modal form'))
+          
+        </p>
+        <!--p-->
+        <!--    a(href='#video', data-toggle='modal')-->
+        <!--        | Видео-->
+        <!---->
+        <!---->
+        <!--p-->
+        <!--    a(href='#text', data-toggle='modal')-->
+        <!--        | Текст-->
+      </div>
+      <!-- Форма-->
+      <div class="modal fade" id="callme" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+          <div class="modal-content modal-content_beige">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <svg class="icon__close" width="12px" height="12px">
+                <use xlink:href="svg-symbols.svg#close"></use>
+            </svg>
+        
+            </button>
+                  <div class="b-modal">
+                            <div class="b-modal__container">
+                                      <div class="b-modal__form">
+                                        <form>
+                                                  <div class="b-modal__content">
+                                                            <div class="b-modal__title">Заказать звонок
+                                                            </div>
+                                                            <div class="b-modal__input">
+                                                                      <label class="b-modal__label">Ваше имя<input class="b-modal__form-control" type="text"/>
+                                                                      </label>
+                                                            </div>
+                                                            <div class="b-modal__input">
+                                                                      <label class="b-modal__label">Ваш телефон<input class="b-modal__form-control" type="tel" required="required"/>
+                                                                      </label>
+                                                            </div>
+                                                            <div class="b-modal__input">
+                                                            </div>
+                                                            <div class="b-modal__call">
+                                                                      <button class="b-modal__btn" type="submit">Заказать
+                                                                      </button>
+                                                                      <div class="b-modal__btn-text">
+                                                                        <p>Или позвоните нам!</p><a class="b-modal__tel" href="tel:+7 3452 28 83 14">+7 (3452) 28 83 14</a>
+                                                                      </div>
+                                                            </div>
+                                                  </div>
+                                        </form>
+                                      </div>
+                            </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--script.-->
+    <!--    window.onload = function() {-->
+    <!--        $("[href='#cart']").trigger('click')-->
+    <!--    }--><a class="page__up">
+            <svg class="icon__up" width="13px" height="15px">
+                <use xlink:href="svg-symbols.svg#up"></use>
+            </svg>
+        </a>
+    <!--script(src='https://unpkg.com/container-query-polyfill/cqfill.iife.min.js')-->
+    <script src="static/js/vendor.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

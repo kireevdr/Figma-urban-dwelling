@@ -17,6 +17,5 @@ phantomjsdriver.log
 
 .vscode
 
-build
 /.htpasswd
 /.htaccess
