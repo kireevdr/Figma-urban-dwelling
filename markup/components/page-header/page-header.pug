@@ -1,0 +1,44 @@
+mixin page-header(data)
+    -
+        var data = data || {}
+        var modeList = data.modeList || []
+        var mode = ''
+        modeList.map(n => mode += `_${n} `)
+    +b.page-header(class=mode)
+        +e.top
+            .container
+                +e.top-menu
+                    +e.A.top-menu-link(href='/') Доставка и оплата
+                    +e.A.top-menu-link(href='/') Гарантия и возврат
+                    +e.A.top-menu-link(href='/') EN
+        +e.top-two
+            .container
+                +e.top-style.row
+                    .col-6.col-sm-3.col-lg-3
+                        +e.A.logo(href='/')
+                            img(src='__static__img/general/logo.svg')
+                    +e.col-menu.col-7.col-lg-6
+                        +e.menu
+                            +e.A.menu-link(href='/') КАТАЛОГ
+                            +e.A.menu-link(href='/') О КОМПАНИИ
+                            +e.A.menu-link(href='/') КОНТАКТЫ
+                    +e.col-menu.col-3.col-lg-3
+                        +e.FORM.search-form
+                            +e.search
+                                +e.INPUT.search-input(type="text", placeholder="Лампы")
+                                +e.BUTTON.search-icon
+                                    !=  pugHelpers.Icon.call(locals, {iconName: 'search'})
+                            +e.cart-form
+                                +e.cart-icon
+                                    !=  pugHelpers.Icon.call(locals, {iconName: 'cart'})
+                                    +e.number-cart 3
+                                +e.search-cart(type="submit") Корзина
+
+                    +e.col-burger.col-6
+                        +e.burger-mobile
+                            .gamburger.js-menu
+                                span.gamburger-line1
+                                span.gamburger-line2
+                                span.gamburger-line3
+
+

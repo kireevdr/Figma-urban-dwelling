@@ -1,0 +1,46 @@
+mixin page-footer(data)
+    +b.page-footer
+        +e.footer
+            .container
+                +e.grid
+                    +e.col-logo
+                        +e.A.logo(href='/')
+                            img(src='__static__img/general/logo-white.svg')
+                    +e.col-address
+                        +e.address
+                            +e.title Адрес
+                            +e.text Текст, Текст, Текст
+                    +e.col-menu
+                        +e.menu
+                            +e.title Услуги
+                            +e.menu-items
+                                +e.A.menu-link(href='#') Каталог
+                                +e.A.menu-link(href='#') О Компании
+                                +e.A.menu-link(href='#') Контакты
+                                +e.A.menu-link(href='#') Доставка и оплата
+                                +e.A.menu-link(href='#') Гарантия и возврат
+                    +e.col-links
+                        +e.links
+                            +e.A.link(href='#') Публичная оферта
+                            +e.A.link(href='#') Политика персональных данных
+                    +e.col-text
+                        +e.text
+                            p Этот сайт защищен от спама службой reCAPTCHA Google. <a href='/' target='_blank'>Политика конфиденциальности/Условия предоставления услуг</a>
+
+                    +e.col-contacts
+                        +e.contacts
+                            +e.title Контакты
+                            +e.contacts-item
+                                +e.contacts-link <a href='mailto:urban.dwelling@yandex.com'>Email: urban.dwelling@yandex.com</a>
+                            +e.contacts-item
+                                +e.contacts-link <a href='tel:8 (999) 999-99-99'>Телефон: 8 (999) 999-99-99</a>
+
+
+                    +e.col-payments
+                        +e.payments
+                            img(src='__static__img/general/p1.svg')
+                            img(src='__static__img/general/p2.svg')
+                            img(src='__static__img/general/master_card.svg')
+
+
+

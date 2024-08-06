@@ -1,0 +1,24 @@
+//-Главная
+extends ../layouts/default.pug
+
+
+include ../components/page-header/page-header
+include ../components/page-footer/page-footer
+include ../components/b-products-list/b-products-list
+
+block vars
+    - var title = 'Главная'
+
+block content
+    .page__header
+        +page-header
+    .page__wrapper
+        .page__b-products-list
+            +b-products-list
+    .page__footer
+        +page-footer
+
+
+
+
+
